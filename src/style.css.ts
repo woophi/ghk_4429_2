@@ -46,10 +46,23 @@ const box = recipe({
       },
       green: {
         backgroundColor: '#E1F0DE',
-        marginTop: '4px',
+        marginTop: '36px',
+        position: 'relative',
       },
     },
   },
+});
+
+const label = style({
+  height: '47px',
+  backgroundColor: '#7FBF73',
+  padding: '8px 16px 23px 16px',
+  borderTopLeftRadius: '12px',
+  borderTopRightRadius: '12px',
+  left: 0,
+  top: -32,
+  position: 'absolute',
+  zIndex: -1,
 });
 
 export const appSt = {
@@ -58,4 +71,5 @@ export const appSt = {
   box,
   row,
   goldenBoxInner,
+  label,
 };

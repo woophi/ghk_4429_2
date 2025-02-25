@@ -35,21 +35,19 @@ export const App = () => {
     <>
       <div className={appSt.container}>
         <Typography.TitleResponsive style={{ marginTop: '1rem' }} tag="h1" view="large" font="system" weight="semibold">
-          Выберите свою инвесткопилку
+          Управляйте финансами с умом
         </Typography.TitleResponsive>
 
-        <Typography.Text view="primary-medium">
-          Откладывайте деньги в копилку и получайте доход от инвестиций
-        </Typography.Text>
+        <Typography.Text view="primary-medium">Рассмотрите новую стратегию накоплений вместо текущей</Typography.Text>
 
         <div className={appSt.box({ color: 'gold' })}>
           <div className={appSt.row}>
             <div>
               <Typography.TitleResponsive tag="h2" view="small" font="system" weight="semibold">
-                Золотая
+                Золотая копилка
               </Typography.TitleResponsive>
               <Typography.Text view="primary-small">
-                Инвестиции в золото без забот о хранении — через обезличенные металлические счета (ОМС)
+                Инвестиции в реальное золото на обезличенных металлических счетах (ОМС)
               </Typography.Text>
             </div>
             <img src={gold} width={90} height={90} />
@@ -68,24 +66,34 @@ export const App = () => {
             <CDNIcon name="glyph_bulb-flash-compact_m" />
 
             <Typography.Text view="component-secondary">
-              Золото сохраняет ценность даже при экономических кризисах
+              Спрос на золото остается высоким в кризисные времена
             </Typography.Text>
           </div>
 
-          <Button block size={40} view="primary" onClick={() => submit(true)} loading={loading}>
-            Выбрать
+          <Button
+            block
+            size={40}
+            view="primary"
+            onClick={() => submit(true)}
+            loading={loading}
+            leftAddons={<CDNIcon name="glyph_arrows-cw-circle_s" />}
+          >
+            Заменить копилку
           </Button>
         </div>
 
         <div className={appSt.box({ color: 'green' })}>
+          <div className={appSt.label}>
+            <Typography.Text view="caps" weight="bold">
+              Подключена
+            </Typography.Text>
+          </div>
           <div className={appSt.row}>
             <div>
               <Typography.TitleResponsive tag="h2" view="small" font="system" weight="semibold">
-                Финансовая
+                Инвесткопилка
               </Typography.TitleResponsive>
-              <Typography.Text view="primary-small">
-                Инвестиции в финансовые инструменты для динамичного роста
-              </Typography.Text>
+              <Typography.Text view="primary-small">Краткосрочные инвестиции в финансовые инструменты</Typography.Text>
             </div>
             <img src={rub} width={90} height={90} />
           </div>
@@ -99,17 +107,20 @@ export const App = () => {
             </Typography.Text>
           </div>
 
-          <Button
-            block
-            size={40}
-            view="primary"
-            href="alfabank://investments/open_investments_account?type=INVESTBOX"
-            disabled={loading}
-            onClick={() => submit()}
-          >
-            Выбрать
+          <Button block size={40} view="primary" disabled>
+            Подключена сейчас
           </Button>
         </div>
+
+        <Button
+          style={{ marginTop: '1rem' }}
+          block
+          view="secondary"
+          href="https://alfa-mobile.alfabank.ru/mobile/goto/invest-details"
+          onClick={() => submit()}
+        >
+          Не интересно
+        </Button>
       </div>
     </>
   );

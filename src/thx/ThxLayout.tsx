@@ -13,17 +13,17 @@ export const ThxLayout = () => {
           Золотая инвесткопилка недоступна
         </Typography.TitleResponsive>
         <Typography.Text tag="p" view="primary-medium" defaultMargins={false}>
-          Сообщим, когда можно будет её открыть. Пока можно открыть финансовую инвесткопилку
+          Сообщим, когда можно будет её открыть. Пока можете продолжать пользоваться своей текущей инвесткопилкой
         </Typography.Text>
       </div>
       <div className={appSt.bottomBtn}>
         <ButtonMobile
-          href="alfabank://investments/open_investments_account?type=INVESTBOX"
+          href="https://alfa-mobile.alfabank.ru/mobile/goto/invest-details"
           block
           view="secondary"
           onClick={() => window.gtag('event', 'end_4428_var2')}
         >
-          Открыть Финансовую копилку
+          Перейти в Инвесткопилку
         </ButtonMobile>
       </div>
     </>
