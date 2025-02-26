@@ -21,7 +21,7 @@ export const ThxLayout = () => {
           href="https://alfa-mobile.alfabank.ru/mobile/goto/invest-details"
           block
           view="secondary"
-          onClick={() => window.gtag('event', 'end_4428_var2')}
+          onClick={() => window.gtag('event', 'end_4429_var2')}
         >
           Перейти в Инвесткопилку
         </ButtonMobile>
