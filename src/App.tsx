@@ -55,7 +55,7 @@ export const App = () => {
 
           <div>
             <Typography.Text view="secondary-medium" tag="p" defaultMargins={false}>
-              Подойдет
+              Подойдёт
             </Typography.Text>
             <Typography.Text view="primary-medium" weight="bold" tag="p" defaultMargins={false}>
               Для долгосрочных накоплений
@@ -66,7 +66,7 @@ export const App = () => {
             <CDNIcon name="glyph_bulb-flash-compact_m" />
 
             <Typography.Text view="component-secondary">
-              Спрос на золото остается высоким в кризисные времена
+              Золото сохраняет ценность даже при экономических кризисах
             </Typography.Text>
           </div>
 
@@ -100,7 +100,7 @@ export const App = () => {
 
           <div>
             <Typography.Text view="secondary-medium" tag="p" defaultMargins={false}>
-              Подойдет
+              Подойдёт
             </Typography.Text>
             <Typography.Text view="primary-medium" weight="bold" tag="p" defaultMargins={false}>
               Для быстрых накоплений
@@ -119,7 +119,7 @@ export const App = () => {
           href="https://alfa-mobile.alfabank.ru/mobile/goto/invest-details"
           onClick={() => submit()}
         >
-          Не интересно
+          Неинтересно
         </Button>
       </div>
     </>
