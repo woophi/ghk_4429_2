@@ -117,7 +117,7 @@ export const App = () => {
           block
           view="secondary"
           href="https://alfa-mobile.alfabank.ru/mobile/goto/invest-details"
-          onClick={() => submit()}
+          onClick={() => submit(false)}
         >
           Неинтересно
         </Button>
